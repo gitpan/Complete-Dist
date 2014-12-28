@@ -1,7 +1,7 @@
 package Complete::Dist;
 
 our $DATE = '2014-12-28'; # DATE
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 use 5.010001;
 use strict;
@@ -37,6 +37,8 @@ _
     result_naked => 1,
 };
 sub complete_dist {
+    require Dist::Util;
+
     my %args = @_;
 
     my $word = $args{word} // '';
@@ -65,7 +67,7 @@ Complete::Dist - Complete from list of installed Perl distributions
 
 =head1 VERSION
 
-This document describes version 0.01 of Complete::Dist (from Perl distribution Complete-Dist), released on 2014-12-28.
+This document describes version 0.02 of Complete::Dist (from Perl distribution Complete-Dist), released on 2014-12-28.
 
 =head1 SYNOPSIS
 

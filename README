@@ -2,7 +2,7 @@ NAME
     Complete::Dist - Complete from list of installed Perl distributions
 
 VERSION
-    This document describes version 0.01 of Complete::Dist (from Perl
+    This document describes version 0.02 of Complete::Dist (from Perl
     distribution Complete-Dist), released on 2014-12-28.
 
 SYNOPSIS
