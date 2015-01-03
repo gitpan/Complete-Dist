@@ -1,58 +1,6 @@
-NAME
-    Complete::Dist - Complete from list of installed Perl distributions
-
-VERSION
-    This document describes version 0.02 of Complete::Dist (from Perl
-    distribution Complete-Dist), released on 2014-12-28.
-
 SYNOPSIS
+
      use Complete::Dist qw(complete_dist);
      my $res = complete_dist(word => 'Text-AN');
      # -> ['Text-ANSI-Util', 'Text-ANSITable']
-
-FUNCTIONS
-  complete_dist(%args) -> any
-    Complete from list of installed Perl distributions.
-
-    Installed Perl distributions are listed using
-    "Dist::Util::list_dists()".
-
-    Arguments ('*' denotes required arguments):
-
-    *   ci => *bool*
-
-        Whether to do case-insensitive search.
-
-    *   word* => *str*
-
-    Return value:
-
-     (any)
-
-TODO
-    $OPT_SHORTCUT_PREFIXES like in Complete::Module?
-
-HOMEPAGE
-    Please visit the project's homepage at
-    <https://metacpan.org/release/Complete-Dist>.
-
-SOURCE
-    Source repository is at
-    <https://github.com/perlancar/perl-Complete-Dist>.
-
-BUGS
-    Please report any bugs or feature requests on the bugtracker website
-    <https://rt.cpan.org/Public/Dist/Display.html?Name=Complete-Dist>
-
-    When submitting a bug or request, please include a test-file or a patch
-    to an existing test-file that illustrates the bug or desired feature.
-
-AUTHOR
-    perlancar <perlancar@cpan.org>
-
-COPYRIGHT AND LICENSE
-    This software is copyright (c) 2014 by perlancar@cpan.org.
-
-    This is free software; you can redistribute it and/or modify it under
-    the same terms as the Perl 5 programming language system itself.
 

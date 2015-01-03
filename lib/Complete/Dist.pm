@@ -1,7 +1,7 @@
 package Complete::Dist;
 
-our $DATE = '2014-12-28'; # DATE
-our $VERSION = '0.02'; # VERSION
+our $DATE = '2015-01-03'; # DATE
+our $VERSION = '0.03'; # VERSION
 
 use 5.010001;
 use strict;
@@ -37,6 +37,7 @@ _
     result_naked => 1,
 };
 sub complete_dist {
+    require Complete::Util;
     require Dist::Util;
 
     my %args = @_;
@@ -67,7 +68,7 @@ Complete::Dist - Complete from list of installed Perl distributions
 
 =head1 VERSION
 
-This document describes version 0.02 of Complete::Dist (from Perl distribution Complete-Dist), released on 2014-12-28.
+This document describes version 0.03 of Complete::Dist (from Perl distribution Complete-Dist), released on 2015-01-03.
 
 =head1 SYNOPSIS
 
@@ -96,14 +97,7 @@ Whether to do case-insensitive search.
 
 =back
 
-Return value:
-
- (any)
-
-=head1 TODO
-
-$OPT_SHORTCUT_PREFIXES like in Complete::Module?
-
+Return value:  (any)
 =head1 HOMEPAGE
 
 Please visit the project's homepage at L<https://metacpan.org/release/Complete-Dist>.
@@ -126,7 +120,7 @@ perlancar <perlancar@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2014 by perlancar@cpan.org.
+This software is copyright (c) 2015 by perlancar@cpan.org.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
